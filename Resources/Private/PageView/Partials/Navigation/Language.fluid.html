@@ -1,0 +1,21 @@
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<ul>
+    <f:for as="item" each="{navigation}">
+        <li>
+            <f:if condition="{item.available}">
+                <f:then>
+                    <f:if condition="{item.current}">
+                        <f:then>
+                            <a aria-current="page" dir="{item.direction}" href="{item.link}" hreflang="{item.hreflang}" lang="{item.hreflang}">{item.navigationTitle}</a>
+                        </f:then>
+                        <f:else>
+                            <a dir="{item.direction}" href="{item.link}" hreflang="{item.hreflang}" lang="{item.hreflang}">{item.navigationTitle}</a>
+                        </f:else>
+                    </f:if>
+                </f:then>
+                <f:else><span dir="{item.direction}" lang="{item.hreflang}">{item.navigationTitle}</span></f:else>
+            </f:if>
+        </li>
+    </f:for>
+</ul>
+</html>

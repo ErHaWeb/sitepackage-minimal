@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+  <file id="f1">
+    <unit id="navigation.main">
+      <segment>
+        <source>Main navigation</source>
+      </segment>
+    </unit>
+    <unit id="navigation.language">
+      <segment>
+        <source>Language navigation</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

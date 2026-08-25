@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+  <file id="f1">
+    <unit id="label">
+      <segment>
+        <source>Sitepackage Minimal</source>
+      </segment>
+    </unit>
+    <unit id="backendLayout.default">
+      <segment>
+        <source>Default</source>
+      </segment>
+    </unit>
+    <unit id="backendLayout.column.main">
+      <segment>
+        <source>Main</source>
+      </segment>
+    </unit>
+  </file>
+</xliff>

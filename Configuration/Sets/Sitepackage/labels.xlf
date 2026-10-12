@@ -6,15 +6,5 @@
         <source>Sitepackage Minimal</source>
       </segment>
     </unit>
-    <unit id="backendLayout.default">
-      <segment>
-        <source>Default</source>
-      </segment>
-    </unit>
-    <unit id="backendLayout.column.main">
-      <segment>
-        <source>Main</source>
-      </segment>
-    </unit>
   </file>
 </xliff>

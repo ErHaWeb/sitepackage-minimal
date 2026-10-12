@@ -1,1 +1,11 @@
-@import './TypoScript/*.typoscript'
+page = PAGE
+page {
+  10 = PAGEVIEW
+  10 {
+    paths.100 = EXT:sitepackage/Resources/Private/PageView/
+    dataProcessing {
+      10 = menu
+      20 = language-menu
+    }
+  }
+}

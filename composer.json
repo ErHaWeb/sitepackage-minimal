@@ -1,5 +1,5 @@
 {
-	"name": "vendorname/sitepackage",
+	"name": "erhaweb/sitepackage",
 	"description": "Sitepackage - Minimal sitepackage extension.",
 	"type": "typo3-cms-extension",
 	"license": "GPL-2.0-or-later",

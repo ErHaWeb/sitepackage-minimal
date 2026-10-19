@@ -1,19 +1,21 @@
-<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" lang="en">
 <ul>
-    <f:for as="item" each="{navigation}">
+    <f:for as="language" each="{languagemenu}">
         <li>
-            <f:if condition="{item.available}">
+            <f:if condition="{language.available}">
                 <f:then>
-                    <f:if condition="{item.current}">
+                    <f:if condition="{language.current}">
                         <f:then>
-                            <a aria-current="page" dir="{item.direction}" href="{item.link}" hreflang="{item.hreflang}" lang="{item.hreflang}">{item.navigationTitle}</a>
+                            <a aria-current="page" dir="{language.direction}" href="{language.link}" hreflang="{language.hreflang}" lang="{language.hreflang}">{language.navigationTitle}</a>
                         </f:then>
                         <f:else>
-                            <a dir="{item.direction}" href="{item.link}" hreflang="{item.hreflang}" lang="{item.hreflang}">{item.navigationTitle}</a>
+                            <a dir="{language.direction}" href="{language.link}" hreflang="{language.hreflang}" lang="{language.hreflang}">{language.navigationTitle}</a>
                         </f:else>
                     </f:if>
                 </f:then>
-                <f:else><span dir="{item.direction}" lang="{item.hreflang}">{item.navigationTitle}</span></f:else>
+                <f:else>
+                    <span dir="{language.direction}" lang="{language.hreflang}">{language.navigationTitle}</span>
+                </f:else>
             </f:if>
         </li>
     </f:for>

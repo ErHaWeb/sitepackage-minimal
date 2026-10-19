@@ -1,12 +1,12 @@
-<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" lang="en">
 <f:if condition="{menu}">
     <nav aria-label="{f:translate(domain: 'sitepackage', key: 'navigation.main')}">
-        <f:render arguments="{navigation: menu}" partial="Navigation/Main"/>
+        <f:render arguments="{menu: menu}" partial="Navigation/Main"/>
     </nav>
 </f:if>
 <f:if condition="{languagemenu}">
     <nav aria-label="{f:translate(domain: 'sitepackage', key: 'navigation.language')}">
-        <f:render arguments="{navigation: languagemenu}" partial="Navigation/Language"/>
+        <f:render arguments="{languagemenu: languagemenu}" partial="Navigation/Language"/>
     </nav>
 </f:if>
 <main>

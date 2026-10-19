@@ -1,10 +1,14 @@
-<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers">
+<html data-namespace-typo3-fluid="true" xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" lang="en">
 <ul>
-    <f:for as="item" each="{navigation}">
+    <f:for as="page" each="{menu}">
         <li>
-            <f:if condition="{item.current}">
-                <f:then><a aria-current="page" href="{item.link}">{item.title}</a></f:then>
-                <f:else><a href="{item.link}">{item.title}</a></f:else>
+            <f:if condition="{page.current}">
+                <f:then>
+                    <a aria-current="page" href="{page.link}">{page.title}</a>
+                </f:then>
+                <f:else>
+                    <a href="{page.link}">{page.title}</a>
+                </f:else>
             </f:if>
         </li>
     </f:for>
